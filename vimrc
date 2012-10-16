@@ -1,5 +1,9 @@
+" Pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" Syntax highlighting
 set nocompatible
-call pathogen#infect()
 syntax on " enable 
 filetype plugin indent on
 set encoding=utf-8
