@@ -10,8 +10,13 @@ set encoding=utf-8
 set showcmd
 set cursorline
 
-" Whitespace
+" Wrapping text
+command! -nargs=* Wrap set wrap linebreak nolist
 set wrap
+set linebreak
+set nolist
+
+" Whitespace
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -52,11 +57,6 @@ endif
 highlight CursorLine guibg=#555555
 
 " Other
-"call pathogen#infect()
-"let g:vimclojure#HighlightBuiltins = 1
-"let g:vimclojure#ParenRainbow = 1
-"autocmd FileType actionscript set omnifunc=actionscriptcomplete#CompleteAS
-"autocmd FileType actionscript :set dictionary=$HOME/.vim/bundles/actionscript.vim/actionscript.dict
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -69,4 +69,3 @@ nmap 0 g0
 set clipboard=unnamed
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
-
