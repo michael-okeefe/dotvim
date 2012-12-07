@@ -47,14 +47,17 @@ set scrolloff=10
 set showmatch
 
 " Colors and GUI
-colorscheme elrodeo " pablo
+colorscheme github " elrodeo pablo
 if has("gui_running")
     set guioptions-=m
     set guioptions-=T
     set gfn=Inconsolata:h20
     " set gfn=Monaco:h16
 endif
-highlight CursorLine guibg=#555555
+" For lighter themes
+highlight CursorLine guibg=#DDDDDD
+" For darker themes
+" highlight CursorLine guibg=#555555
 
 " Other
 map <C-h> <C-w>h
