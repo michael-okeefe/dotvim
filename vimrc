@@ -4,7 +4,8 @@ call pathogen#helptags()
 
 " Syntax highlighting
 set nocompatible
-syntax on " enable 
+" syntax on enable 
+syntax enable
 filetype plugin indent on
 set encoding=utf-8
 set showcmd
@@ -47,18 +48,23 @@ set scrolloff=10
 set showmatch
 
 " Colors and GUI
-colorscheme github " elrodeo pablo
+" colorscheme github
+" colorscheme elrodeo
+" colorscheme pablo
+colorscheme solarized
 if has("gui_running")
+    set background=light
+    " For lighter themes
+    highlight CursorLine guibg=#DDDDDD
     set guioptions-=m
     set guioptions-=T
     set gfn=Inconsolata:h20
     " set gfn=Monaco:h16
+else
+    set background=dark
+    " For darker themes
+    highlight CursorLine guibg=#555555
 endif
-" For lighter themes
-highlight CursorLine guibg=#DDDDDD
-" For darker themes
-" highlight CursorLine guibg=#555555
-
 " Other
 map <C-h> <C-w>h
 map <C-j> <C-w>j
