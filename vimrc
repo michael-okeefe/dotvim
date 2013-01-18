@@ -67,6 +67,8 @@ let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun = 1
 " Full path to the nailgun client
 let vimclojure#NailgunClient = "/usr/local/Cellar/nailgun/0.7.1/bin/ng"
+" Add support for syntax highlighting in ClojureScript files
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 " Colors and GUI
 " colorscheme github
