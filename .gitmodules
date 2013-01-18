@@ -1,15 +1,20 @@
 [submodule "bundle/vimclojure"]
 	path = bundle/vimclojure
 	url = https://github.com/vim-scripts/VimClojure.git
+    ignore = untracked
 [submodule "bundle/paredit"]
 	path = bundle/paredit
 	url = https://github.com/vim-scripts/paredit.vim.git
+    ignore = untracked
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+    ignore = untracked
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+    ignore = untracked
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+    ignore = untracked
