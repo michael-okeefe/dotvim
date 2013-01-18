@@ -40,7 +40,8 @@ set fileformats=unix,dos,mac
 set fileformat=unix
 set noerrorbells
 set wildmenu
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set list! " turn list on
+set listchars=trail:~,tab:>-
 set number
 set numberwidth=4
 set ruler
