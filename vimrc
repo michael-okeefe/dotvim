@@ -4,7 +4,7 @@ call pathogen#helptags()
 
 " Syntax highlighting
 set nocompatible
-" syntax on enable 
+" syntax on enable
 syntax enable
 filetype plugin indent on
 set encoding=utf-8
@@ -48,6 +48,26 @@ set ruler
 set scrolloff=10
 set showmatch
 
+" VimClojure setup
+" note: need to install nailgun: brew install nailgun
+" /usr/local/Cellar/nailgun/{version,0.7.1 for me}
+" Determine indenting using fuzzy matching. e.g. the line starting "(with-"
+" will be indented two spaces.
+let vimclojure#FuzzyIndent=1
+" Highlight built-in functions from clojure.core and friends
+let vimclojure#HighlightBuiltins=1
+" Highlight functions from contrib
+let vimclojure#HighlightContrib=1
+" As new symbols are identified using VimClojure's dynamic features, automatically
+" highlight them.
+let vimclojure#DynamicHighlighting=1
+" Color parens so they're easier to match visually
+let vimclojure#ParenRainbow=1
+" Yes, I want nailgun support
+let vimclojure#WantNailgun = 1
+" Full path to the nailgun client
+let vimclojure#NailgunClient = "/usr/local/Cellar/nailgun/0.7.1/bin/ng"
+
 " Colors and GUI
 " colorscheme github
 " colorscheme elrodeo
@@ -66,6 +86,7 @@ else
     " For darker themes
     highlight CursorLine guibg=#555555
 endif
+
 " Other
 map <C-h> <C-w>h
 map <C-j> <C-w>j
