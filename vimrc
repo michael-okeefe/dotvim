@@ -50,6 +50,8 @@ set showmatch
 
 " Add support for syntax highlighting in ClojureScript files
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
+" Add support for syntax highlighting in EDN files
+autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
 
 " Colors and GUI
 " colorscheme github
