@@ -52,6 +52,8 @@ set showmatch
 
 " Add support for syntax highlighting in ClojureScript files
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
+" Add support for syntax highlighting in EDN files
+autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
 
 " Add md as markdown
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
