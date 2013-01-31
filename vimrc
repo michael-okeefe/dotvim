@@ -6,6 +6,8 @@ call pathogen#helptags()
 set nocompatible
 " syntax on enable
 syntax enable
+" for responsiveness, limit syntax highlighting on long lines
+set synmaxcol=200
 filetype plugin indent on
 set encoding=utf-8
 set showcmd
@@ -50,6 +52,9 @@ set showmatch
 
 " Add support for syntax highlighting in ClojureScript files
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
+
+" Add md as markdown
+autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 
 " Colors and GUI
 " colorscheme github
