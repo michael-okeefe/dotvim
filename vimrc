@@ -7,7 +7,9 @@ set nocompatible
 " syntax on enable
 syntax enable
 " for responsiveness, limit syntax highlighting on long lines
-set synmaxcol=200
+" set synmaxcol=0
+" set to zero to scan everything -- may be slow
+" let g:clojure_maxlines = 0
 filetype plugin indent on
 set encoding=utf-8
 set showcmd
