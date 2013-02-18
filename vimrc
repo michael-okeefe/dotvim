@@ -56,14 +56,18 @@ set showmatch
 
 " Add support for syntax highlighting in ClojureScript files
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
-autocmd BufNewFile,BufRead *.cljs call PareditInitBuffer()
+autocmd BufRead,BufNewFile *.cljs call PareditInitBuffer()
 
 " Add support for syntax highlighting in EDN files
 autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
-autocmd BufNewFile,BufRead *.edn call PareditInitBuffer()
+autocmd BufRead,BufNewFile *.edn call PareditInitBuffer()
 
 " Add md as markdown
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
+
+" Autostart spell check
+autocmd BufRead,BufNewFile *.txt setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell
 
 " Colors and GUI
 " colorscheme github
