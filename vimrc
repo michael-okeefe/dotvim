@@ -80,7 +80,7 @@ if has("gui_running")
     highlight CursorLine guibg=#DDDDDD
     set guioptions-=m
     set guioptions-=T
-    set gfn=Inconsolata:h20
+    set guifont=Inconsolata\ 20
     " set gfn=Monaco:h16
 else
     set background=dark
