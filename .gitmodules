@@ -30,3 +30,6 @@
 	path = bundle/rainbow-parenthesis
 	url = https://github.com/kien/rainbow_parentheses.vim
 	ignore = untracked
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
