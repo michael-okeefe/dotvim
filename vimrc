@@ -69,24 +69,13 @@ autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
 
-" Colors and GUI
 " colorscheme github
 " colorscheme elrodeo
 " colorscheme pablo
 colorscheme solarized
-if has("gui_running")
-    set background=light
-    " For lighter themes
-    highlight CursorLine guibg=#DDDDDD
-    set guioptions-=m
-    set guioptions-=T
-    set guifont=Inconsolata\ 20
-    " set gfn=Monaco:h16
-else
-    set background=dark
-    " For darker themes
-    highlight CursorLine guibg=#555555
-endif
+set background=dark
+" For darker themes
+highlight CursorLine guibg=#555555
 
 " Other
 map <C-h> <C-w>h
@@ -100,7 +89,6 @@ nmap $ g$
 nmap 0 g0
 set clipboard=unnamed
 set noerrorbells visualbell t_vb=
-autocmd GUIEnter * set visualbell t_vb=
 
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position
