@@ -28,7 +28,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
-set winwidth=82
 
 " Searching
 set hlsearch
