@@ -7,11 +7,11 @@ set nocompatible
 " syntax on enable
 syntax enable
 " for responsiveness, limit syntax highlighting on long lines
-set synmaxcol=0
+set synmaxcol=120
 " set to zero to scan everything
-let g:clojure_maxlines = 100
+let g:clojure_maxlines = 10
 " number of lines to search for balanced parenthesis
-let g:paredit_matchlines = 1000
+let g:paredit_matchlines = 10
 filetype plugin indent on
 set encoding=utf-8
 set showcmd
