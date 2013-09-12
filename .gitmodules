@@ -59,3 +59,6 @@
 [submodule "bundle/vim-actionscript"]
 	path = bundle/vim-actionscript
 	url = https://github.com/jeroenbourgois/vim-actionscript.git
+[submodule "bundle/vim-slime"]
+	path = bundle/vim-slime
+	url = https://github.com/jpalardy/vim-slime.git
