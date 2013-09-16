@@ -111,6 +111,17 @@ autocmd Syntax clojure RainbowParenthesesLoadRound
 autocmd BufEnter *.clj RainbowParenthesesToggle
 autocmd BufLeave *.clj RainbowParenthesesToggle
 
+" Remove Trailing Whitespace on Save
+autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.clj :%s/\s\+$//e
+autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd BufWritePre *.as :%s/\s\+$//e
+autocmd BufWritePre *.html :%s/\s\+$//e
+autocmd BufWritePre *.css :%s/\s\+$//e
+autocmd BufWritePre *.js :%s/\s\+$//e
+autocmd BufWritePre *.txt :%s/\s\+$//e
+autocmd BufWritePre *.md :%s/\s\+$//e
+
 let g:rbpt_colorpairs = [
     \ ['magenta',     'purple1'],
     \ ['cyan',        'magenta1'],
