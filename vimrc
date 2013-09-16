@@ -9,9 +9,9 @@ syntax enable
 " for responsiveness, limit syntax highlighting on long lines
 set synmaxcol=120
 " set to zero to scan everything
-let g:clojure_maxlines = 10
+let g:clojure_maxlines = 50
 " number of lines to search for balanced parenthesis
-let g:paredit_matchlines = 10
+let g:paredit_matchlines = 50
 filetype plugin indent on
 set encoding=utf-8
 set showcmd
@@ -86,7 +86,10 @@ nmap k gk
 nmap ^ g^
 nmap $ g$
 nmap 0 g0
-set clipboard=unnamed
+" fixes issue under tmux
+if $TMUX == ''
+    set clipboard=unnamed
+end
 set noerrorbells visualbell t_vb=
 
 function! <SID>StripTrailingWhitespaces()
@@ -104,8 +107,6 @@ endfunction
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
 " Clojure options.
-let g:slime_target = "tmux"
-
 autocmd Syntax clojure RainbowParenthesesLoadRound
 autocmd BufEnter *.clj RainbowParenthesesToggle
 autocmd BufLeave *.clj RainbowParenthesesToggle
