@@ -114,6 +114,8 @@ autocmd BufLeave *.clj RainbowParenthesesToggle
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre *.py :%s/\s\+$//e
 autocmd BufWritePre *.clj :%s/\s\+$//e
+autocmd BufWritePre *.cljs :%s/\s\+$//e
+autocmd BufWritePre *.edn :%s/\s\+$//e
 autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.as :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
