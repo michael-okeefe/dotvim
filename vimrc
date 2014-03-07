@@ -144,6 +144,10 @@ let g:rbpt_max = 9
 " https://github.com/godlygeek/tabular
 " vim-classpath
 " git://github.com/tpope/vim-classpath
+" vim-clojure-highlight
+" https://github.com/guns/vim-clojure-highlight.git
+" vim-clojure-static
+" https://github.com/guns/vim-clojure-static.git
 " vim-colors-solarized
 " https://github.com/altercation/vim-colors-solarized
 " vim-fireplace
