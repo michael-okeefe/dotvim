@@ -1,0 +1,60 @@
+[submodule "bundle/html5"]
+	path = bundle/html5
+	url = https://github.com/othree/html5.vim
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree
+[submodule "bundle/python"]
+	path = bundle/python
+	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
+[submodule "bundle/rainbow-parenthesis"]
+	path = bundle/rainbow-parenthesis
+	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "bundle/classpath"]
+	path = bundle/classpath
+	url = git://github.com/tpope/vim-classpath
+[submodule "bundle/clojure-highlight"]
+	path = bundle/clojure-highlight
+	url = https://github.com/guns/vim-clojure-highlight.git
+[submodule "bundle/clojure-static"]
+	path = bundle/clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
+[submodule "bundle/colors-solarized"]
+	path = bundle/colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/fireplace"]
+	path = bundle/fireplace
+	url = git://github.com/tpope/vim-fireplace
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/orgmode"]
+	path = bundle/orgmode
+	url = https://github.com/jceb/vim-orgmode
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = git://github.com/tpope/vim-repeat.git
+[submodule "bundle/ruby"]
+	path = bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "bundle/sexp"]
+	path = bundle/sexp
+	url = https://github.com/guns/vim-sexp.git
+[submodule "bundle/sexp-mappings"]
+	path = bundle/sexp-mappings
+	url = git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
+[submodule "bundle/speeddating"]
+	path = bundle/speeddating
+	url = https://github.com/tpope/vim-speeddating
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-table-mode"]
+	path = bundle/vim-table-mode
+	url = git://github.com/dhruvasagar/vim-table-mode
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = https://github.com/sukima/xmledit
