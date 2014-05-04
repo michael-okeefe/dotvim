@@ -6,12 +6,7 @@ call pathogen#helptags()
 set nocompatible
 " syntax on enable
 syntax enable
-" for responsiveness, limit syntax highlighting on long lines
-set synmaxcol=85
-" set to zero to scan everything
-let g:clojure_maxlines = 100
 " number of lines to search for balanced parenthesis
-let g:paredit_matchlines = 100
 filetype plugin indent on
 set encoding=utf-8
 set showcmd
@@ -55,11 +50,9 @@ set showmatch
 
 " Add support for syntax highlighting in ClojureScript files
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
-autocmd BufRead,BufNewFile *.cljs call PareditInitBuffer()
 
 " Add support for syntax highlighting in EDN files
 autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
-autocmd BufRead,BufNewFile *.edn call PareditInitBuffer()
 
 " Add md as markdown
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
@@ -68,9 +61,6 @@ autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
 
-" colorscheme github
-" colorscheme elrodeo
-" colorscheme pablo
 colorscheme solarized
 set background=dark
 " For darker themes
@@ -81,6 +71,7 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+nmap <C-R> gqq
 nmap j gj
 nmap k gk
 nmap ^ g^
@@ -106,11 +97,6 @@ endfunction
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
-" Clojure options.
-autocmd Syntax clojure RainbowParenthesesLoadRound
-autocmd BufEnter *.clj RainbowParenthesesToggle
-autocmd BufLeave *.clj RainbowParenthesesToggle
-
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre *.py :%s/\s\+$//e
 autocmd BufWritePre *.clj :%s/\s\+$//e
@@ -123,5 +109,3 @@ autocmd BufWritePre *.css :%s/\s\+$//e
 autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.txt :%s/\s\+$//e
 autocmd BufWritePre *.md :%s/\s\+$//e
-
-let g:rbpt_max = 9
