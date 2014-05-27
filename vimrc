@@ -6,12 +6,7 @@ call pathogen#helptags()
 set nocompatible
 " syntax on enable
 syntax enable
-" for responsiveness, limit syntax highlighting on long lines
-set synmaxcol=85
-" set to zero to scan everything
-let g:clojure_maxlines = 100
 " number of lines to search for balanced parenthesis
-let g:paredit_matchlines = 100
 filetype plugin indent on
 set encoding=utf-8
 set showcmd
@@ -55,11 +50,9 @@ set showmatch
 
 " Add support for syntax highlighting in ClojureScript files
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
-autocmd BufRead,BufNewFile *.cljs call PareditInitBuffer()
 
 " Add support for syntax highlighting in EDN files
 autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
-autocmd BufRead,BufNewFile *.edn call PareditInitBuffer()
 
 " Add md as markdown
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
@@ -68,9 +61,6 @@ autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
 
-" colorscheme github
-" colorscheme elrodeo
-" colorscheme pablo
 colorscheme solarized
 set background=dark
 " For darker themes
@@ -81,6 +71,7 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+nmap <C-R> gqq
 nmap j gj
 nmap k gk
 nmap ^ g^
@@ -106,11 +97,6 @@ endfunction
 
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
-" Clojure options.
-autocmd Syntax clojure RainbowParenthesesLoadRound
-autocmd BufEnter *.clj RainbowParenthesesToggle
-autocmd BufLeave *.clj RainbowParenthesesToggle
-
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre *.py :%s/\s\+$//e
 autocmd BufWritePre *.clj :%s/\s\+$//e
@@ -123,52 +109,3 @@ autocmd BufWritePre *.css :%s/\s\+$//e
 autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.txt :%s/\s\+$//e
 autocmd BufWritePre *.md :%s/\s\+$//e
-
-let g:rbpt_max = 9
-
-" Bundles
-" to install:
-" cd ~/.vim/bundle
-" git clone <pathspec>
-" <pathspec> given below
-" ------------------------------------
-" html5
-" https://github.com/othree/html5.vim
-" nerdtree
-" git://github.com/scrooloose/nerdtree
-" python
-" https://github.com/vim-scripts/python.vim--Vasiliev.git
-" rainbow-parenthesis
-" https://github.com/kien/rainbow_parentheses.vim
-" tabular
-" https://github.com/godlygeek/tabular
-" vim-classpath
-" git://github.com/tpope/vim-classpath
-" vim-clojure-highlight
-" https://github.com/guns/vim-clojure-highlight.git
-" vim-clojure-static
-" https://github.com/guns/vim-clojure-static.git
-" vim-colors-solarized
-" https://github.com/altercation/vim-colors-solarized
-" vim-fireplace
-" git://github.com/tpope/vim-fireplace
-" vim-fugitive
-" git://github.com/tpope/vim-fugitive.git
-" vim-orgmode
-" https://github.com/jceb/vim-orgmode
-" vim-repeat
-" git://github.com/tpope/vim-repeat.git
-" vim-ruby
-" https://github.com/vim-ruby/vim-ruby
-" vim-sexp
-" https://github.com/guns/vim-sexp.git
-" vim-sexp-mappings-for-regular-people
-" git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
-" vim-speeddating
-" https://github.com/tpope/vim-speeddating
-" vim-surround
-" git://github.com/tpope/vim-surround.git
-" vim-table-mode
-" git://github.com/dhruvasagar/vim-table-mode
-" xmledit
-" https://github.com/sukima/xmledit
