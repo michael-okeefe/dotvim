@@ -14,6 +14,7 @@ set cursorline
 
 " Wrapping text
 command! -nargs=* Wrap set wrap linebreak nolist
+set textwidth=80
 set wrap
 set linebreak
 set nolist
