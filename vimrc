@@ -6,6 +6,13 @@ call pathogen#helptags()
 set nocompatible
 " syntax on enable
 syntax enable
+" Some Linux distributions set filetype in /etc/vimrc.
+" Clear filetype flags before changing runtimepath to force Vim to reload them.
+if exists("g:did_load_filetypes")
+    filetype off
+    filetype plugin indent off
+endif
+set runtimepath+=/usr/local/Cellar/go/1.3/libexec/misc/vim
 " number of lines to search for balanced parenthesis
 filetype plugin indent on
 set encoding=utf-8
@@ -110,3 +117,6 @@ autocmd BufWritePre *.css :%s/\s\+$//e
 autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.txt :%s/\s\+$//e
 autocmd BufWritePre *.md :%s/\s\+$//e
+
+" autoformat Go on save
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
