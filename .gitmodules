@@ -31,9 +31,6 @@
 [submodule "bundle/sexp"]
 	path = bundle/sexp
 	url = https://github.com/guns/vim-sexp.git
-[submodule "bundle/sexp-mappings"]
-	path = bundle/sexp-mappings
-	url = git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 [submodule "bundle/speeddating"]
 	path = bundle/speeddating
 	url = https://github.com/tpope/vim-speeddating
