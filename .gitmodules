@@ -7,9 +7,6 @@
 [submodule "bundle/python"]
 	path = bundle/python
 	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
-[submodule "bundle/rainbow-parenthesis"]
-	path = bundle/rainbow-parenthesis
-	url = https://github.com/kien/rainbow_parentheses.vim
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular
