@@ -61,3 +61,6 @@
 [submodule "bundle/rust"]
 	path = bundle/rust
 	url = https://github.com/wting/rust.vim.git
+[submodule "bundle/vim-sexp-mappings"]
+	path = bundle/vim-sexp-mappings
+	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people.git
