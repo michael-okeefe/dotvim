@@ -75,6 +75,7 @@ set background=dark
 highlight CursorLine guibg=#555555
 
 " Other
+let mapleader=","
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
