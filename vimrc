@@ -61,6 +61,8 @@ autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 " Add support for syntax highlighting in EDN files
 autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
+autocmd BufRead,BufNewFile *.mikan setlocal filetype=clojure
+autocmd BufRead,BufNewFile *.boot setlocal filetype=clojure
 
 " Add md as markdown
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
@@ -142,6 +144,9 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre *.py :%s/\s\+$//e
 autocmd BufWritePre *.clj :%s/\s\+$//e
+autocmd BufWritePre *.boot :%s/\s\+$//e
+autocmd BufWritePre *.mikan :%s/\s\+$//e
+autocmd BufWritePre *.edn :%s/\s\+$//e
 autocmd BufWritePre *.cljs :%s/\s\+$//e
 autocmd BufWritePre *.edn :%s/\s\+$//e
 autocmd BufWritePre *.rb :%s/\s\+$//e
