@@ -109,10 +109,10 @@ map <leader>wc :wincmd q<cr>
 map <leader>wr <C-W>r
 
 " Window Resizing
-nmap <leader><left>  :3wincmd <<cr>
-nmap <leader><right> :3wincmd ><cr>
-nmap <leader><up>    :3wincmd +<cr>
-nmap <leader><down>  :3wincmd -<cr>
+nmap <left>  :3wincmd <<cr>
+nmap <right> :3wincmd ><cr>
+nmap <up>    :3wincmd +<cr>
+nmap <down>  :3wincmd -<cr>
 
 " Navigation
 nmap <C-R> gqq
