@@ -61,6 +61,8 @@ autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 " Add support for syntax highlighting in EDN files
 autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
+autocmd BufRead,BufNewFile *.mikan setlocal filetype=clojure
+autocmd BufRead,BufNewFile *.boot setlocal filetype=clojure
 
 " Add md as markdown
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
@@ -89,28 +91,6 @@ function! WinMove(key)
     exec "wincmd ".a:key
   endif
 endfunction
-
-" Move to the given windows
-map <leader>h              :call WinMove('h')<cr>
-map <leader>k              :call WinMove('k')<cr>
-map <leader>l              :call WinMove('l')<cr>
-map <leader>j              :call WinMove('j')<cr>
-
-" Move existing Windows
-map <leader>H              :wincmd H<cr>
-map <leader>K              :wincmd K<cr>
-map <leader>L              :wincmd L<cr>
-map <leader>J              :wincmd J<cr>
-
-" Window Close/ Window Rotate
-map <leader>wc :wincmd q<cr>
-map <leader>wr <C-W>r
-
-" Window Resizing
-nmap <leader><left>  :3wincmd <<cr>
-nmap <leader><right> :3wincmd ><cr>
-nmap <leader><up>    :3wincmd +<cr>
-nmap <leader><down>  :3wincmd -<cr>
 
 " Navigation
 nmap <C-R> gqq
@@ -142,6 +122,9 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre *.py :%s/\s\+$//e
 autocmd BufWritePre *.clj :%s/\s\+$//e
+autocmd BufWritePre *.boot :%s/\s\+$//e
+autocmd BufWritePre *.mikan :%s/\s\+$//e
+autocmd BufWritePre *.edn :%s/\s\+$//e
 autocmd BufWritePre *.cljs :%s/\s\+$//e
 autocmd BufWritePre *.edn :%s/\s\+$//e
 autocmd BufWritePre *.rb :%s/\s\+$//e
