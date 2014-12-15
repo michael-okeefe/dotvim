@@ -137,3 +137,6 @@ autocmd BufWritePre *.md :%s/\s\+$//e
 
 " autoformat Go on save
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" autoformat XML -- requires xmllint on path
+" autocmd FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
