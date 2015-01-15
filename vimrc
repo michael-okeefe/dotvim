@@ -13,8 +13,9 @@ if exists("g:did_load_filetypes")
     filetype plugin indent off
 endif
 set runtimepath+=/usr/local/Cellar/go/1.3/libexec/misc/vim
-" number of lines to search for balanced parenthesis
-filetype plugin indent off
+filetype on
+filetype plugin on
+filetype indent on
 set encoding=utf-8
 set showcmd
 set cursorline
