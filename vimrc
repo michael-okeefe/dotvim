@@ -106,35 +106,20 @@ if $TMUX == ''
 end
 set noerrorbells visualbell t_vb=
 
-function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
+function! Preserve(command)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
 endfunction
 
-nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
-
-" Remove Trailing Whitespace on Save
-autocmd BufWritePre *.py :%s/\s\+$//e
-autocmd BufWritePre *.clj :%s/\s\+$//e
-autocmd BufWritePre *.boot :%s/\s\+$//e
-autocmd BufWritePre *.mikan :%s/\s\+$//e
-autocmd BufWritePre *.edn :%s/\s\+$//e
-autocmd BufWritePre *.cljs :%s/\s\+$//e
-autocmd BufWritePre *.edn :%s/\s\+$//e
-autocmd BufWritePre *.rb :%s/\s\+$//e
-autocmd BufWritePre *.as :%s/\s\+$//e
-autocmd BufWritePre *.html :%s/\s\+$//e
-autocmd BufWritePre *.css :%s/\s\+$//e
-autocmd BufWritePre *.js :%s/\s\+$//e
-autocmd BufWritePre *.txt :%s/\s\+$//e
-autocmd BufWritePre *.md :%s/\s\+$//e
+" Delete trailing whitespace in a buffer
+nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 
 " autoformat Go on save
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
