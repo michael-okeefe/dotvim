@@ -5,6 +5,8 @@ To use this setup, first install vim and pathogen in the usual way. Then:
     cd ~
     git clone https://github.com/michael-okeefe/dotvim.git ~/.vim
     cd .vim
+    mkdir ~/.vim/backup
+    mkdir ~/.vim/tmp
     ln -s vimrc ~/.vimrc
     ln -s gvimrc ~/.gvimrc
     git submodule init
