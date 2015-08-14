@@ -76,3 +76,6 @@
 [submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "bundle/vim-fbp"]
+	path = bundle/vim-fbp
+	url = git://github.com/ninegrid/vim-fbp.git
