@@ -50,7 +50,7 @@ set fileformat=unix
 set noerrorbells
 set wildmenu
 set list! " turn list on
-set listchars=trail:~,tab:>-
+set listchars=trail:~,tab:>\  " tab shown as '> '
 set number
 set numberwidth=4
 set ruler
@@ -86,6 +86,10 @@ autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 autocmd BufRead,BufNewFile *.edn setlocal filetype=clojure
 autocmd BufRead,BufNewFile *.mikan setlocal filetype=clojure
 autocmd BufRead,BufNewFile *.boot setlocal filetype=clojure
+
+" FileType Plugin for C++
+autocmd BufRead,BufNewFile *.cc setlocal shiftwidth=2 tabstop=2 noexpandtab
+autocmd BufRead,BufNewFile *.hh setlocal shiftwidth=2 tabstop=2 noexpandtab
 
 " Add md as markdown
 autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
