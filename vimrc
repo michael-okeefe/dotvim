@@ -110,7 +110,7 @@ autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
 
 colorscheme solarized
-set background=dark
+set background=light
 " For darker themes
 highlight CursorLine guibg=#555555
 
