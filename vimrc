@@ -137,10 +137,8 @@ nmap k gk
 nmap ^ g^
 nmap $ g$
 nmap 0 g0
-" fixes issue under tmux
-if $TMUX == ''
-    set clipboard=unnamed
-end
+" per instructions here: http://vim.wikia.com/wiki/Mac_OS_X_clipboard_sharing
+set clipboard=unnamed
 set noerrorbells visualbell t_vb=
 
 function! Preserve(command)
