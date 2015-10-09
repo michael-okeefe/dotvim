@@ -20,6 +20,9 @@ set encoding=utf-8
 set showcmd
 set cursorline
 
+" Keep cursor centered if possible
+set scrolloff=999
+
 " Wrapping text
 command! -nargs=* Wrap set wrap linebreak nolist
 set textwidth=0
