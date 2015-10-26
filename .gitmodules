@@ -76,3 +76,6 @@
 [submodule "bundle/vim-fbp"]
 	path = bundle/vim-fbp
 	url = git://github.com/ninegrid/vim-fbp.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git://github.com/tpope/vim-vinegar.git
