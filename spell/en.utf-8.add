@@ -9,13 +9,10 @@ Broman
 Modelyze
 Clojure
 parsable
-<<<<<<< HEAD
 MeKan
 learnable
 Halloway
-=======
 ASHRAE
->>>>>>> b6cfbbbe13212733854f84967d9347812d334150
 O'Keefe
 unaddressed
 EnergyPlus
@@ -37,13 +34,10 @@ Humidistats
 AirLoopHVAC
 APIs
 FORTRAN's
-file
-file
 IDD
 IDFEditor
 EPLaunch
-IES
-VE
+IES-VE
 STDOUT
 STDERR
 OpenStudio
