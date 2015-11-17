@@ -164,3 +164,10 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " autoformat XML -- requires xmllint on path
 " autocmd FileType xml exe ":silent %!xmllint --format --recover - 2>/dev/null"
+
+" Auto generate vim spell/*.add files
+for d in glob('~/.vim/spell/*.add', 1, 1)
+    if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+        silent exec 'mkspell! ' . fnameescape(d)
+    endif
+endfor
