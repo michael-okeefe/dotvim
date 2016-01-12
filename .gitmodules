@@ -64,12 +64,6 @@
 [submodule "bundle/scss-syntax"]
 	path = bundle/scss-syntax
 	url = https://github.com/cakebaker/scss-syntax.vim.git
-[submodule "bundle/vim-sexp"]
-	path = bundle/vim-sexp
-	url = https://github.com/guns/vim-sexp.git
-[submodule "bundle/vim-sexp-mappings-for-regular-people"]
-	path = bundle/vim-sexp-mappings-for-regular-people
-	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
 [submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim.git
