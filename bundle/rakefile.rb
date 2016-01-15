@@ -1,0 +1,19 @@
+repos = File.read('repos.txt').split()
+
+desc "install repos"
+task :install do
+  repos.each do |repo|
+    folder_name = repo.split(/\//)[-1].split(/\./)[0]
+    unless File.exist?(folder_name)
+      sh "git clone #{repo}"
+    end
+  end
+end
+
+desc "update repos"
+task :update do
+  dirs = Dir['*'].reject {|f| File.file? f}
+  dirs.each do |d|
+    sh "cd #{d} && git pull origin master && cd .."
+  end
+end
