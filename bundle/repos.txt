@@ -6,3 +6,6 @@ git://github.com/tpope/vim-projectionist.git
 git://github.com/tpope/vim-dispatch.git
 https://github.com/tpope/vim-fireplace.git
 git://github.com/tpope/vim-classpath.git
+https://github.com/tpope/vim-surround.git
+https://github.com/tpope/vim-repeat.git
+https://github.com/tpope/vim-speeddating.git
