@@ -10,3 +10,6 @@ colorscheme solarized
 set background=light
 " For darker themes
 highlight CursorLine guibg=#555555
+
+" No Backup Files
+set noswapfile
