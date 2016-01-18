@@ -5,19 +5,20 @@ To use this setup, first install vim and pathogen in the usual way. Then:
     cd ~
     git clone https://github.com/michael-okeefe/dotvim.git ~/.vim
     cd .vim
-    mkdir ~/.vim/backup
-    mkdir ~/.vim/tmp
     ln -s vimrc ~/.vimrc
     ln -s gvimrc ~/.gvimrc
-    git submodule init
-    git submodule update
+    cd ~/.vim/bundle
+    rake install
     
-To add new submodules, run the following from ~/.vim:
+To add new bundles,
 
-    git submodule add <submodule-git-address> bundle/<local-name>
-    git add .
-    git commit -m <your commit message>
-    
-To upgrade all git submodules, run the following from ~/.vim:
+1. add the git url to the bundle/repos.txt file
+2. commit bundle/repos.txt to the git repository
+3. cd ~/.vim/bundle
+4. rake install
 
-    git submodule foreach git pull origin master
+To update existing bundles,
+
+1. cd ~/.vim/bundle
+2. rake update
+ 
