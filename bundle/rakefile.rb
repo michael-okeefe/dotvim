@@ -5,7 +5,7 @@ task :install do
   repos.each do |repo|
     folder_name = repo.split(/\//)[-1].split(/\./)[0]
     unless File.exist?(folder_name)
-      sh "git clone #{repo}" unless repo.start_with?(';')
+      sh "git clone #{repo}" unless repo.strip.start_with?(';')
     end
   end
 end
