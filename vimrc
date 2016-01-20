@@ -13,3 +13,11 @@ highlight CursorLine guibg=#555555
 
 " No Backup Files
 set noswapfile
+
+" Tabs
+set tabstop=2 
+set shiftwidth=2
+set expandtab
+
+" Line Numbering
+set number
