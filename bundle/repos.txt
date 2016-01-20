@@ -10,3 +10,4 @@ https://github.com/tpope/vim-surround.git
 https://github.com/tpope/vim-repeat.git
 https://github.com/tpope/vim-speeddating.git
 ;https://github.com/bhurlow/vim-parinfer.git
+https://github.com/vim-ruby/vim-ruby.git
