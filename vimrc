@@ -21,3 +21,6 @@ set expandtab
 
 " Line Numbering
 set number
+
+" Clipboard
+set clipboard=unnamed
