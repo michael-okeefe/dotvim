@@ -24,3 +24,7 @@ set number
 
 " Clipboard
 set clipboard=unnamed
+
+" Moving by Logical Lines
+:noremap k gk
+:noremap j gj
