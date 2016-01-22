@@ -36,3 +36,10 @@ nmap 0 g0
 
 " Turn Off Noises
 set noerrorbells visualbell t_vb=
+
+" Auto generate vim spell/*.add files
+for d in glob('~/.vim/spell/*.add', 1, 1)
+    if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+        silent exec 'mkspell! ' . fnameescape(d)
+    endif
+endfor
