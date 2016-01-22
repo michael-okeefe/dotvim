@@ -26,5 +26,13 @@ set number
 set clipboard=unnamed
 
 " Moving by Logical Lines
-:noremap k gk
-:noremap j gj
+nmap <C-R> gqq
+nmap j gj
+nmap k gk
+nmap ^ g^
+nmap $ g$
+nmap 0 g0
+" per instructions here: http://vim.wikia.com/wiki/Mac_OS_X_clipboard_sharing
+
+" Turn Off Noises
+set noerrorbells visualbell t_vb=
