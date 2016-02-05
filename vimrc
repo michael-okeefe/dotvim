@@ -34,5 +34,12 @@ nmap $ g$
 nmap 0 g0
 " per instructions here: http://vim.wikia.com/wiki/Mac_OS_X_clipboard_sharing
 
-" Turn off annoying stuff
+" Turn Off Noises
 set noerrorbells visualbell t_vb=
+
+" Auto generate vim spell/*.add files
+for d in glob('~/.vim/spell/*.add', 1, 1)
+    if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+        silent exec 'mkspell! ' . fnameescape(d)
+    endif
+endfor
