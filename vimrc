@@ -24,6 +24,7 @@ set number
 
 " Turn on Wildmenu
 set wildmenu
+set wildignorecase
 
 " Clipboard
 set clipboard=unnamed
