@@ -22,6 +22,9 @@ set expandtab
 " Line Numbering
 set number
 
+" Turn on Wildmenu
+set wildmenu
+
 " Clipboard
 set clipboard=unnamed
 
