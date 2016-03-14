@@ -14,6 +14,13 @@ highlight CursorLine guibg=#555555
 " No Backup Files
 set noswapfile
 
+" Scrolling
+set scrolloff=6
+
+" Set to Match Parens
+set showmatch
+hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
+
 " Tabs
 set tabstop=2 
 set shiftwidth=2
@@ -24,7 +31,9 @@ set number
 
 " Turn on Wildmenu
 set wildmenu
-set wildignorecase
+if exists("&wildignorecase")
+  set wildignorecase
+endif
 
 " Clipboard
 set clipboard=unnamed
@@ -43,7 +52,7 @@ set noerrorbells visualbell t_vb=
 
 " Auto generate vim spell/*.add files
 for d in glob('~/.vim/spell/*.add', 1, 1)
-    if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
-        silent exec 'mkspell! ' . fnameescape(d)
-    endif
+  if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+    silent exec 'mkspell! ' . fnameescape(d)
+  endif
 endfor
