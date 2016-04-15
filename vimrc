@@ -1,3 +1,5 @@
+set nocompatible
+
 " Pathogen
 execute pathogen#infect()
 " Regenerate any documentation files
