@@ -54,6 +54,10 @@ nmap $ g$
 nmap 0 g0
 " per instructions here: http://vim.wikia.com/wiki/Mac_OS_X_clipboard_sharing
 
+if has('nvim')
+  highlight MatchParen ctermbg=blue guibg=lightblue
+end
+
 " Turn Off Noises
 set noerrorbells visualbell t_vb=
 
