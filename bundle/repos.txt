@@ -17,3 +17,4 @@ https://github.com/cespare/vim-toml.git
 ;https://github.com/gabrielelana/vim-markdown.git
 https://github.com/dhruvasagar/vim-table-mode.git
 git://github.com/tpope/vim-unimpaired.git
+https://github.com/Twinside/vim-modelica.git
