@@ -61,6 +61,9 @@ end
 " Turn Off Noises
 set noerrorbells visualbell t_vb=
 
+" Turn On Mouse
+set mouse=a
+
 " Auto generate vim spell/*.add files
 for d in glob('~/.vim/spell/*.add', 1, 1)
   if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
