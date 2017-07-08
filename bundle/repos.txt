@@ -4,11 +4,11 @@ https://github.com/guns/vim-clojure-static.git
 git://github.com/tpope/vim-salve.git
 git://github.com/tpope/vim-projectionist.git
 git://github.com/tpope/vim-dispatch.git
-;https://github.com/tpope/vim-fireplace.git
-;git://github.com/tpope/vim-classpath.git
+https://github.com/tpope/vim-fireplace.git
+git://github.com/tpope/vim-classpath.git
 https://github.com/tpope/vim-surround.git
 https://github.com/tpope/vim-repeat.git
-;https://github.com/tpope/vim-speeddating.git
+https://github.com/tpope/vim-speeddating.git
 https://github.com/bhurlow/vim-parinfer.git
 https://github.com/vim-ruby/vim-ruby.git
 ;https://github.com/tpope/vim-fugitive.git
