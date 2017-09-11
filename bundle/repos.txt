@@ -1,9 +1,9 @@
-https://github.com/tpope/vim-fireplace.git
 https://github.com/guns/vim-clojure-static.git
+https://github.com/tpope/vim-fireplace.git
 git://github.com/tpope/vim-classpath.git
+git://github.com/tpope/vim-salve.git
 ;https://github.com/tpope/vim-projectionist.git
 ;git://github.com/tpope/vim-dispatch.git
-;git://github.com/tpope/vim-salve.git
 ;https://github.com/dgrnbrg/vim-redl.git
 git://github.com/tpope/vim-sensible.git
 https://github.com/altercation/vim-colors-solarized.git
