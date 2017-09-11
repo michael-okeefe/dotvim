@@ -70,3 +70,6 @@ for d in glob('~/.vim/spell/*.add', 1, 1)
     silent exec 'mkspell! ' . fnameescape(d)
   endif
 endfor
+
+set fileformat=unix
+set fileformats=unix,dos
