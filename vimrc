@@ -39,6 +39,9 @@ if exists("&wildignorecase")
   set wildignorecase
 endif
 
+" Set the Leader Character to ","
+let mapleader=","
+
 " Markdown
 let g:vim_markdown_folding_disabled = 1
 
