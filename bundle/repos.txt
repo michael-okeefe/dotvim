@@ -1,7 +1,7 @@
 https://github.com/guns/vim-clojure-static.git
-https://github.com/tpope/vim-fireplace.git
-git://github.com/tpope/vim-classpath.git
-git://github.com/tpope/vim-salve.git
+;https://github.com/tpope/vim-fireplace.git
+;git://github.com/tpope/vim-classpath.git
+;git://github.com/tpope/vim-salve.git
 ;https://github.com/tpope/vim-projectionist.git
 ;git://github.com/tpope/vim-dispatch.git
 ;https://github.com/dgrnbrg/vim-redl.git
@@ -12,7 +12,7 @@ https://github.com/tpope/vim-repeat.git
 https://github.com/tpope/vim-speeddating.git
 https://github.com/bhurlow/vim-parinfer.git
 https://github.com/vim-ruby/vim-ruby.git
-https://github.com/tpope/vim-fugitive.git
+;https://github.com/tpope/vim-fugitive.git
 https://github.com/cespare/vim-toml.git
 ;https://github.com/plasticboy/vim-markdown.git
 ;https://github.com/gabrielelana/vim-markdown.git
