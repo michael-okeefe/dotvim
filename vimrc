@@ -26,9 +26,14 @@ set showmatch
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
 " Tabs
-set tabstop=2 
+set tabstop=2
 set shiftwidth=2
 set expandtab
+set shiftround
+
+" Text
+set textwidth=79
+set autoindent
 
 " Line Numbering
 set number
