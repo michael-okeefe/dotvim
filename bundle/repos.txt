@@ -24,4 +24,4 @@ git://github.com/tpope/vim-unimpaired.git
 https://github.com/nvie/vim-flake8.git
 ;https://github.com/kotarak/vimpire.git
 https://github.com/eraserhd/parinfer-rust.git
-https://github.com/jebberjeb/clojure-socketrepl.nvim.git
+;https://github.com/jebberjeb/clojure-socketrepl.nvim.git
