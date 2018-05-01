@@ -1,5 +1,5 @@
 https://github.com/guns/vim-clojure-static.git
-;https://github.com/tpope/vim-fireplace.git
+https://github.com/tpope/vim-fireplace.git
 ;git://github.com/tpope/vim-classpath.git
 ;git://github.com/tpope/vim-salve.git
 ;https://github.com/tpope/vim-projectionist.git
