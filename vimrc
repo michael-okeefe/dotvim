@@ -38,6 +38,12 @@ set autoindent
 " Line Numbering
 set number
 
+" Neovim Terminal Mode
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+endif
+
 " Turn on Wildmenu
 set wildmenu
 if exists("&wildignorecase")
@@ -56,7 +62,9 @@ set clipboard=unnamed
 " Navigation
 nmap <C-R> gqq
 nmap j gj
+nmap <Up> gj
 nmap k gk
+nmap <Down> gk
 nmap ^ g^
 nmap $ g$
 nmap 0 g0
