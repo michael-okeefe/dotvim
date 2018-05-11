@@ -62,9 +62,9 @@ set clipboard=unnamed
 " Navigation
 nmap <C-R> gqq
 nmap j gj
-nmap <Up> gj
+nmap <Down> gj
 nmap k gk
-nmap <Down> gk
+nmap <Up> gk
 nmap ^ g^
 nmap $ g$
 nmap 0 g0
