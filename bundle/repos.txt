@@ -1,5 +1,5 @@
 https://github.com/guns/vim-clojure-static.git
-https://github.com/tpope/vim-fireplace.git
+;https://github.com/tpope/vim-fireplace.git
 ;git://github.com/tpope/vim-classpath.git
 ;git://github.com/tpope/vim-salve.git
 ;https://github.com/tpope/vim-projectionist.git
@@ -21,7 +21,7 @@ git://github.com/tpope/vim-unimpaired.git
 ;https://github.com/lambdatoast/elm.vim.git
 ;https://github.com/Twinside/vim-modelica.git
 ;https://github.com/vim-scripts/modelica
-https://github.com/nvie/vim-flake8.git
+;https://github.com/nvie/vim-flake8.git
 ;https://github.com/kotarak/vimpire.git
 https://github.com/eraserhd/parinfer-rust.git
 ;https://github.com/jebberjeb/clojure-socketrepl.nvim.git
