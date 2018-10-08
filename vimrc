@@ -74,6 +74,10 @@ if has('nvim')
   highlight MatchParen ctermbg=blue guibg=lightblue
 end
 
+if !has('nvim')
+  set ttymouse=xterm2
+end
+
 " Turn Off Noises
 set noerrorbells visualbell t_vb=
 
