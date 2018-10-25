@@ -29,11 +29,17 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set shiftround
+
+" Wrapping
+set wrap
+set linebreak
+set nolist
+set wrapmargin=0
 
 " Text
-set textwidth=79
+set textwidth=0
 set autoindent
+set formatoptions-=t
 
 " Line Numbering
 set number
