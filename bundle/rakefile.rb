@@ -26,3 +26,5 @@ desc "same as update"
 task :upgrade do
   update
 end
+
+task :default => [:install, :upgrade]
