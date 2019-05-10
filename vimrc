@@ -78,10 +78,12 @@ nmap 0 g0
 
 if has('nvim')
   highlight MatchParen ctermbg=blue guibg=lightblue
+  let g:slime_target = "neovim"
 end
 
 if !has('nvim')
   set ttymouse=xterm2
+  let g:slime_target = "vimterminal"
 end
 
 " Turn Off Noises
@@ -99,3 +101,4 @@ endfor
 
 set fileformat=unix
 set fileformats=unix,dos
+

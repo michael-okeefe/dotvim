@@ -27,3 +27,4 @@ https://github.com/eraserhd/parinfer-rust.git
 ;https://github.com/jebberjeb/clojure-socketrepl.nvim.git
 https://github.com/wlangstroth/vim-racket.git
 https://github.com/otherjoel/vim-pollen.git
+https://github.com/jpalardy/vim-slime.git
