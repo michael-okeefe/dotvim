@@ -27,3 +27,4 @@ https://github.com/eraserhd/parinfer-rust.git
 ;https://github.com/jebberjeb/clojure-socketrepl.nvim.git
 https://github.com/jpalardy/vim-slime.git
 ;https://github.com/chrisbra/csv.vim
+https://github.com/dense-analysis/ale.git
