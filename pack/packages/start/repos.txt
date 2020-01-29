@@ -1,0 +1,11 @@
+https://github.com/guns/vim-clojure-static.git
+git://github.com/tpope/vim-sensible.git
+https://github.com/tpope/vim-surround.git
+https://github.com/tpope/vim-repeat.git
+https://github.com/tpope/vim-speeddating.git
+https://github.com/vim-ruby/vim-ruby.git
+https://github.com/cespare/vim-toml.git
+https://github.com/dhruvasagar/vim-table-mode.git
+git://github.com/tpope/vim-unimpaired.git
+https://github.com/eraserhd/parinfer-rust.git
+https://github.com/jpalardy/vim-slime.git

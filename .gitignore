@@ -4,3 +4,5 @@ backup
 tmp
 spell/*.spl
 bundle/
+pack/packages/opt/
+pack/packages/start/

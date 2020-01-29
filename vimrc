@@ -1,10 +1,5 @@
 set nocompatible
 
-" Pathogen
-execute pathogen#infect()
-" Regenerate any documentation files
-call pathogen#helptags()
-
 " Minimal Setup
 syntax on
 filetype plugin indent on
