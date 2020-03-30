@@ -5,10 +5,10 @@ syntax on
 filetype plugin indent on
 
 " Colors
-colorscheme solarized
-set background=light
+"colorscheme solarized
+"set background=light
 " For darker themes
-highlight CursorLine guibg=#555555
+"highlight CursorLine guibg=#555555
 
 " No Backup Files
 set noswapfile
