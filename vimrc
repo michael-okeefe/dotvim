@@ -97,3 +97,10 @@ endfor
 set fileformat=unix
 set fileformats=unix,dos
 
+" TableMode settings
+let g:table_mode_corner_corner='+'
+let g:table_mode_corner='+'
+let g:table_mode_header_fillchar='='
+
+" Set no fixed end of line
+set nofixendofline
