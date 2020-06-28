@@ -98,9 +98,15 @@ set fileformat=unix
 set fileformats=unix,dos
 
 " TableMode settings
-let g:table_mode_corner_corner='+'
-let g:table_mode_corner='+'
-let g:table_mode_header_fillchar='='
+"let g:table_mode_corner_corner='+'
+"let g:table_mode_corner='+'
+"let g:table_mode_header_fillchar='='
+
+" EasyAlign settings
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Set no fixed end of line
 " set nofixendofline
