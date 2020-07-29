@@ -118,3 +118,9 @@ packloadall
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
 silent! helptags ALL
+
+" Start interactive EasyAlign in visual mode
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object
+nmap ga <Plug>(EasyAlign)
