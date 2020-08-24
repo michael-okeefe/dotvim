@@ -124,3 +124,9 @@ vmap <Enter> <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object
 nmap ga <Plug>(EasyAlign)
+
+" Add to .vimrc to enable project-specific vimrc
+" exrc allows loading local executing local rc files.
+set exrc
+" secure disallows the use of :autocmd, shell and write commands in local .vimrc files.
+set secure
