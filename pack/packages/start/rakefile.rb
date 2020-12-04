@@ -13,7 +13,10 @@ end
 def update
   dirs = Dir['*'].reject {|f| File.file? f}
   dirs.each do |d|
-    sh "cd #{d} && git pull origin master && cd .."
+    Dir.chdir(d) do
+      main_branch = `git branch --show-current`.strip
+      sh "git pull origin #{main_branch}"
+    end
   end
 end
 
