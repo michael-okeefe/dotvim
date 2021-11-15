@@ -16,7 +16,11 @@ def update
   dirs.each do |d|
     Dir.chdir(d) do
       main_branch = `git branch --show-current`.strip
-      sh "git pull origin #{main_branch}"
+      begin
+        sh "git pull origin #{main_branch}"
+      rescue
+        puts "error in repo #{d}... continuing..."
+      end
     end
   end
 end
