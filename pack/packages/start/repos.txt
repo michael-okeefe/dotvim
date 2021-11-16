@@ -9,7 +9,7 @@ https://github.com/dhruvasagar/vim-table-mode.git
 git://github.com/tpope/vim-unimpaired.git
 https://github.com/eraserhd/parinfer-rust.git
 https://github.com/jpalardy/vim-slime.git
-https://github.com/dense-analysis/ale.git
+;https://github.com/dense-analysis/ale.git
 https://github.com/tpope/vim-fugitive.git
 https://github.com/pangloss/vim-javascript.git
 https://github.com/jceb/vim-orgmode.git
